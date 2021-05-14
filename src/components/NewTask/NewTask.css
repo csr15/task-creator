@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+.center, .new-task .form-control .form-icon, .new-task .form-group, .new-task .form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-task {
+  background-color: #EDF7FC;
+  padding: 20px 15px;
+}
+
+.new-task .input-layout, .new-task .form-control .form-icon, .new-task .form-control .select, .new-task .form-control input[type="text"], .new-task .persons {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #cfd3d4;
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.new-task .form-control {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.new-task .form-control .date {
+  position: relative;
+}
+
+.new-task .form-control .label {
+  font-size: 14;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.9em;
+}
+
+.new-task .form-control .form-icon {
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  padding: 0 10px;
+  width: 97%;
+}
+
+.new-task .form-control .form-icon i {
+  font-size: 1.1rem !important;
+}
+
+.new-task .form-control input,
+.new-task .form-control select {
+  padding: 7px 0 7px 3px;
+  background: none;
+  font-size: 16px;
+  width: 90%;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.new-task .form-control input:focus,
+.new-task .form-control select:focus {
+  border-color: #82b5d6;
+  animation: all 0.3s ease;
+  -webkit-animation: all 0.3s ease;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.new-task .form-control input[type="date"]::-webkit-calendar-picker-indicator,
+.new-task .form-control input[type="date"]::-webkit-inner-spin-button {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.new-task .form-control input[type="text"] {
+  padding: 7px 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.new-task .form-control input[type="text"]::-ms-expand {
+  display: none;
+}
+
+.new-task .form-group {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.new-task .form-group .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.new-task .form-group .select label {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.new-task .form-buttons {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.new-task .form-buttons .trash {
+  color: #6e6e6e;
+}
+
+.new-task .form-buttons .trash i {
+  font-size: 1.2rem !important;
+  cursor: pointer;
+}
+
+.new-task .form-buttons .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.new-task .form-buttons .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.new-task .form-buttons .btn-primary {
+  background: #28a768;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.new-task .form-buttons .btn-primary:hover {
+  background: #23925b;
+  animation: all 0.3s ease;
+  -webkit-animation: all 0.3s ease;
+}
+
+@media (max-width: 350px) {
+  .new-task .form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .new-task .form-group .form-icon {
+    width: 100%;
+  }
+  .new-task .form-group .select {
+    display: block;
+  }
+  .new-task .form-group .select label {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 506px) {
+  .new-task .form-icon input,
+  .new-task .form-icon select {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=NewTask.css.map */

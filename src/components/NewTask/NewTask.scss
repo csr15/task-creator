@@ -1,0 +1,194 @@
+@import "../../utilities/scss-variables/main.scss";
+
+.new-task {
+  background-color: $form;
+  padding: 20px 15px;
+
+  .input-layout {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $inputBorder;
+    background: $white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+
+  .form-control {
+    margin-bottom: 15px;
+    width: 100%;
+
+    .date {
+      position: relative;
+    }
+
+    .label {
+      font-size: 14;
+      color: $black;
+      font-family: $sans;
+      line-height: 1.9em;
+    }
+
+    .form-icon {
+      @extend .center;
+      @extend .input-layout;
+      flex-wrap: nowrap !important;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: "";
+      padding: 0 10px;
+      width: 97%;
+
+      i {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    input,
+    select {
+      padding: 7px 0 7px 3px;
+      background: none;
+      font-size: 16px;
+      width: 90%;
+      border: none;
+      font-family: $sans;
+      -webkit-appearance: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+
+      &:focus {
+        border-color: $inputBorderOnFocus;
+        animation: all 0.3s ease;
+        -webkit-animation: all 0.3s ease;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .select {
+      @extend .input-layout;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator,
+    input[type="date"]::-webkit-inner-spin-button {
+      opacity: 0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+
+    input[type="text"] {
+      @extend .input-layout;
+      padding: 7px 10px;
+      font-family: $sans;
+      font-size: 16px;
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+  }
+
+  .form-group {
+    @extend .center;
+    flex-direction: row;
+
+    .select {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      label {
+        margin-right: auto;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .persons {
+    @extend .input-layout;
+  }
+
+  .form-buttons {
+    @extend .center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .trash {
+      color: $text;
+
+      i {
+        font-size: 1.2rem !important;
+        cursor: pointer;
+      }
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border: none;
+      font-family: $sans;
+      font-weight: 600;
+      background: none;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .btn-primary {
+      background: $primary;
+      color: $white;
+      margin-left: 10px;
+
+      &:hover {
+        background: darken($color: $primary, $amount: 5%);
+        animation: all 0.3s ease;
+        -webkit-animation: all 0.3s ease;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .new-task {
+    .form-group {
+      flex-wrap: wrap;
+
+      .form-icon {
+        width: 100%;
+      }
+      .select {
+        display: block;
+
+        label {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 506px) {
+  .new-task {
+    .form-icon {
+      input,
+      select {
+        width: 80%;
+      }
+    }
+  }
+}

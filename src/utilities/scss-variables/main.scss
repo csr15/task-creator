@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+//color
+$primary: #28a768;
+$text: #6e6e6e;
+$border: #c0c3c4;
+$form: #EDF7FC;
+$inputBorder: #cfd3d4;
+$inputHover: #f8f8f8;
+$inputBorderOnFocus: #82b5d6;
+$white: #ffffff;
+$black: #000000;
+$date: #fa3c3c;
+
+//fonts
+$sans: "Open Sans", sans-serif;
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

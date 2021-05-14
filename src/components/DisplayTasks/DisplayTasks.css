@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+.center, .task-card, .task-card .task-card-details, .task-card .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display-container {
+  max-height: 500px;
+  overflow-y: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.display-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.display-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.display-container::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+}
+
+.display-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.task-card {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  padding: 10px 15px 10px 15px;
+}
+
+.task-card .task-card-details img {
+  width: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-right: 10px;
+}
+
+.task-card .task-card-details h4 {
+  line-height: 1.1rem;
+  margin: 7px 0 0 0;
+}
+
+.task-card .task-card-details p {
+  color: #6e6e6e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #fa3c3c;
+}
+
+.task-card .btn-group {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #c0c3c4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-card .btn-group i {
+  color: #6e6e6e;
+}
+/*# sourceMappingURL=DisplayTasks.css.map */

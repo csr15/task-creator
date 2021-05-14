@@ -1,0 +1,4 @@
+how to use create-task app
+
+1. run `npm install` on root directory
+2. run `npm start`

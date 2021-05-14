@@ -1,0 +1,8 @@
+{
+  "short_name": "Create-task",
+  "name": "Create a task and manage it",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
