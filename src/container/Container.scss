@@ -1,0 +1,29 @@
+@import "../utilities/scss-variables/main.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  @extend .center;
+  overflow: hidden;
+
+  .left-panel {
+    height: 100%;
+    background: $dashboardLeftBg;
+    width: 15%;
+  }
+
+  .right-panel {
+    width: 85%;
+  }
+}
+
+@media (max-width: 501px) {
+  .container {
+    .left-panel {
+      display: none;
+    }
+    .right-panel {
+      width: 100%;
+    }
+  }
+}

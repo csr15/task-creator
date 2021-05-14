@@ -2,18 +2,23 @@
 
 .container {
   @extend .center;
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 0;
   animation: fadein_anim 0.2s linear;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   .task-container {
-    width: 600px;
-    max-width: 1200px;
-    margin: 10px 10px;
+    width: 500px;
+    max-width: 800px;
+    margin: 30px 20px;
     border: 1px solid $border;
-
+    overflow: hidden;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
     .header {
       @extend .center;
       justify-content: space-between;
@@ -42,7 +47,6 @@
         }
       }
     }
-
   }
 }
 

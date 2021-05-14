@@ -12,19 +12,29 @@
 }
 
 .container {
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 0;
   -webkit-animation: fadein_anim 0.2s linear;
           animation: fadein_anim 0.2s linear;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .container .task-container {
-  width: 600px;
-  max-width: 1200px;
-  margin: 10px 10px;
+  width: 500px;
+  max-width: 800px;
+  margin: 30px 20px;
   border: 1px solid #c0c3c4;
+  overflow: hidden;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
 }
 
 .container .task-container .header {

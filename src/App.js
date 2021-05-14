@@ -4,8 +4,8 @@ import { Provider } from "react-redux";
 import ReduxThunk from "redux-thunk";
 
 import taskReducer from "./store/reducers/task-reducer";
-import Main from "./components/Main/Main";
 import userReducer from "./store/reducers/user-reducer";
+import Container from "./container/Container";
 
 const rootReducer = combineReducers({
   task: taskReducer,
@@ -17,7 +17,7 @@ const store = createStore(rootReducer, applyMiddleware(ReduxThunk));
 function App() {
   return (
     <Provider store={store}>
-      <Main />
+      <Container />
     </Provider>
   );
 }

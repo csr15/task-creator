@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+.center, .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .left-panel {
+  height: 100%;
+  background: #323E4D;
+  width: 15%;
+}
+
+.container .right-panel {
+  width: 85%;
+}
+
+@media (max-width: 501px) {
+  .container .left-panel {
+    display: none;
+  }
+  .container .right-panel {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Container.css.map */

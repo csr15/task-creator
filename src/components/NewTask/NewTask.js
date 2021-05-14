@@ -163,10 +163,7 @@ const NewTask = (props) => {
               setNewtask({ ...newTask, assignedPerson: e.target.value })
             }
           >
-            <option value="person1">person1</option>
-            <option value="person2">person2</option>
-            <option value="person3">person3</option>
-            <option value="person4">person4</option>
+            <option value="Saravanan 23 Testing">Saravanan 23 Testing</option>
           </select>
         </div>
       </form>
@@ -198,3 +195,6 @@ const NewTask = (props) => {
 };
 
 export default NewTask;
+
+
+
